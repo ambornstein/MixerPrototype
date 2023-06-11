@@ -1,0 +1,19 @@
+Process
+=======
+link
+
+Command Line
+============
+link C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\MixerPrototype\launcher.obj C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\tmp\SVM-1682027207565\com.mixer.prototype.obj C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\MixerPrototype\IconGroup.obj j2pkcs11.lib java.lib net.lib nio.lib prefs.lib fdlibm.lib zip.lib sunmscapi.lib jvm.lib libchelper.lib advapi32.lib iphlpapi.lib secur32.lib userenv.lib version.lib ws2_32.lib winhttp.lib ncrypt.lib crypt32.lib /NODEFAULTLIB:libcmt.lib /SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup comdlg32.lib dwmapi.lib gdi32.lib imm32.lib shell32.lib uiautomationcore.lib urlmon.lib winmm.lib glass.lib javafx_font.lib javafx_iio.lib prism_common.lib prism_d3d.lib /WHOLEARCHIVE:glass.lib /WHOLEARCHIVE:javafx_font.lib /WHOLEARCHIVE:javafx_iio.lib /WHOLEARCHIVE:prism_common.lib /WHOLEARCHIVE:prism_d3d.lib /OUT:C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\MixerPrototype.exe /LIBPATH:C:\Users\Andrei\.gluon\substrate\javafxStaticSdk\21-ea+9.1\windows-x86_64\sdk\lib /LIBPATH:C:\graalvm-svm-java17-windows-gluon-22.1.0.1-Final\lib\svm\clibraries\windows-amd64 /LIBPATH:C:\graalvm-svm-java17-windows-gluon-22.1.0.1-Final\lib\static\windows-amd64
+
+Output
+======
+Microsoft (R) Incremental Linker Version 14.35.32217.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+   Creating library C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\MixerPrototype.lib and object C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\MixerPrototype.exp
+
+
+Result
+======
+result: 0

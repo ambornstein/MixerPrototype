@@ -1,0 +1,24 @@
+.view {
+    -fx-font-family: "Roboto Light";
+    -fx-font-size: 1.2em;
+}
+
+.charm-text-field, .text-field {
+    -fx-padding: 10 10 10 10;
+    -fx-max-height: 60;
+}
+
+.label,.check-box {
+    -fx-padding: 10 10 10 10;
+    -fx-alignment: CENTER-LEFT;
+    -fx-font-size: 20px
+}
+
+.combo-box, .charm-text-field, .text-field {
+    -fx-border-color: #BF5B04;
+}
+
+.button {
+    -fx-font-size: 1.2em;
+    -fx-alignment: CENTER;
+}

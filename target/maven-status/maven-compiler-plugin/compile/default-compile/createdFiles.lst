@@ -1,0 +1,14 @@
+com\mixer\AddressPrediction.class
+com\mixer\AutoCompleteAddressField.class
+com\mixer\DrawerManager.class
+com\mixer\views\CatalogPresenter.class
+com\mixer\views\EventView.class
+com\mixer\views\SecondaryView.class
+com\mixer\views\EventType.class
+com\mixer\AutoCompleteTextField.class
+com\mixer\Prototype.class
+com\mixer\views\PrimaryPresenter.class
+com\mixer\views\PrimaryView.class
+com\mixer\views\CatalogView.class
+com\mixer\views\EventPresenter.class
+com\mixer\views\SecondaryPresenter.class

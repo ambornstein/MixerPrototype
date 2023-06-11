@@ -1,0 +1,45 @@
+Process
+=======
+compile
+
+Command Line
+============
+C:\graalvm-svm-java17-windows-gluon-22.1.0.1-Final\bin\native-image.cmd "-Djdk.internal.lambda.eagerlyInitialize=false" --no-server -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout "-H:DeadlockWatchdogInterval=0" -H:+RemoveSaturatedTypeFlows -H:+ExitAfterRelocatableImageWrite "--features=org.graalvm.home.HomeFinderFeature" "-H:TempDirectory=C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\tmp" "-H:EnableURLProtocols=http,https" "-H:ReflectionConfigurationFiles=C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\reflectionconfig-x86_64-windows.json" "-H:JNIConfigurationFiles=C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\jniconfig-x86_64-windows.json" "-H:ResourceConfigurationFiles=C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\resourceconfig-x86_64-windows.json" "-H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle,com/sun/glass/ui/win/themes" "-Dsvm.platform=org.graalvm.nativeimage.Platform$WINDOWS_AMD64" -cp "C:\Users\Andrei\.m2\repository\com\gluonhq\substrate\0.0.58\substrate-0.0.58.jar;C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\tmp\classpathJar.jar" com.mixer.Prototype
+
+Output
+======
+Warning: Ignoring server-mode native-image argument --no-server.
+========================================================================================================================
+GraalVM Native Image: Generating 'com.mixer.prototype' (shared library)...
+========================================================================================================================
+[1/7] Initializing...                                                                                    (6.5s @ 0.16GB)
+ Version info: 'GraalVM 22.1.0.1 Java 17 CE'
+ C compiler: cl.exe (microsoft, x64, 19.35.32217)
+ Garbage collector: Serial GC
+[2/7] Performing analysis...  [**************]                                                          (26.3s @ 1.82GB)
+  12,422 (90.96%) of 13,656 classes reachable
+  23,059 (68.51%) of 33,657 fields reachable
+  61,115 (64.59%) of 94,621 methods reachable
+     673 classes,   186 fields, and 2,972 methods registered for reflection
+     137 classes,   152 fields, and   208 methods registered for JNI access
+[3/7] Building universe...                                                                               (1.8s @ 2.64GB)
+[4/7] Parsing methods...      [*]                                                                        (1.0s @ 3.89GB)
+[5/7] Inlining methods...     [****]                                                                     (3.0s @ 4.23GB)
+[6/7] Compiling methods...    [****]                                                                    (13.0s @ 3.55GB)
+
+------------------------------------------------------------------------------------------------------------------------
+                        5.3s (9.1% of total time) in 35 GCs | Peak RSS: 7.44GB | CPU load: 9.10
+------------------------------------------------------------------------------------------------------------------------
+Produced artifacts:
+ C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\MixerPrototype\graal_isolate.h (header)
+ C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\MixerPrototype\com.mixer.prototype.h (header)
+ C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\MixerPrototype\graal_isolate_dynamic.h (header)
+ C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\MixerPrototype\com.mixer.prototype_dynamic.h (header)
+ C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\MixerPrototype\com.mixer.prototype.build_artifacts.txt
+========================================================================================================================
+Finished generating 'com.mixer.prototype' in 57.4s.
+
+
+Result
+======
+result: 0

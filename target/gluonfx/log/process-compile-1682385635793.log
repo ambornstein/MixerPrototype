@@ -1,0 +1,49 @@
+Process
+=======
+compile
+
+Command Line
+============
+C:\graalvm-svm-java17-windows-gluon-22.1.0.1-Final\bin\native-image.cmd "-Djdk.internal.lambda.eagerlyInitialize=false" --no-server -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout "-H:DeadlockWatchdogInterval=0" -H:+RemoveSaturatedTypeFlows -H:+ExitAfterRelocatableImageWrite "--features=org.graalvm.home.HomeFinderFeature" "-H:TempDirectory=C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\tmp" "-H:EnableURLProtocols=http,https" "-H:ReflectionConfigurationFiles=C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\reflectionconfig-x86_64-windows.json" "-H:JNIConfigurationFiles=C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\jniconfig-x86_64-windows.json" "-H:ResourceConfigurationFiles=C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\resourceconfig-x86_64-windows.json" "-H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle,com/sun/glass/ui/win/themes" "-Dsvm.platform=org.graalvm.nativeimage.Platform$WINDOWS_AMD64" -cp "C:\Users\Andrei\.m2\repository\com\gluonhq\substrate\0.0.58\substrate-0.0.58.jar;C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\tmp\classpathJar.jar" com.mixer.Prototype
+
+Output
+======
+Warning: Ignoring server-mode native-image argument --no-server.
+========================================================================================================================
+GraalVM Native Image: Generating 'com.mixer.prototype' (shared library)...
+========================================================================================================================
+Warning: Method com.mixer.views.PrimaryPresenter.initialize() not found.
+[1/7] Initializing...                                                                                    (6.5s @ 0.23GB)
+ Version info: 'GraalVM 22.1.0.1 Java 17 CE'
+ C compiler: cl.exe (microsoft, x64, 19.35.32217)
+ Garbage collector: Serial GC
+ 2 user-provided feature(s)
+  - com.oracle.svm.polyglot.kotlin.KotlinFeature
+  - com.oracle.svm.thirdparty.gson.GsonFeature
+[2/7] Performing analysis...  [**************]                                                          (21.7s @ 4.38GB)
+  13,325 (90.91%) of 14,658 classes reachable
+  24,679 (68.60%) of 35,974 fields reachable
+  65,055 (62.19%) of 104,601 methods reachable
+     675 classes,   201 fields, and 3,149 methods registered for reflection
+     137 classes,   152 fields, and   208 methods registered for JNI access
+[3/7] Building universe...                                                                               (1.8s @ 2.37GB)
+[4/7] Parsing methods...      [*]                                                                        (0.8s @ 3.70GB)
+[5/7] Inlining methods...     [****]                                                                     (2.5s @ 4.11GB)
+[6/7] Compiling methods...    [***]                                                                     (10.4s @ 4.81GB)
+
+------------------------------------------------------------------------------------------------------------------------
+                        4.5s (8.6% of total time) in 37 GCs | Peak RSS: 7.62GB | CPU load: 7.88
+------------------------------------------------------------------------------------------------------------------------
+Produced artifacts:
+ C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\MixerPrototype\com.mixer.prototype.h (header)
+ C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\MixerPrototype\graal_isolate.h (header)
+ C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\MixerPrototype\com.mixer.prototype_dynamic.h (header)
+ C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\MixerPrototype\graal_isolate_dynamic.h (header)
+ C:\Users\Andrei\IdeaProjects\MixerPrototype\target\gluonfx\x86_64-windows\gvm\MixerPrototype\com.mixer.prototype.build_artifacts.txt
+========================================================================================================================
+Finished generating 'com.mixer.prototype' in 50.3s.
+
+
+Result
+======
+result: 0
